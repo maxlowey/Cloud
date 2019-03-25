@@ -6,3 +6,26 @@ spring:
   application:
     #配置应用名称，后期可根据应用名称调用应用的服务
     name: eureka-client-config
+    
+server:
+  port: 7102 #启动端口号
+spring:
+  application:
+    #配置应用名称，后期可根据应用名称调用应用的应服务
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+        #https://gitee.com/xslde/springcloud-config.git，.git 可带上或不带
+          uri: https://github.com/maxlowey/Cloud.git
+        #如果gig仓库需要账户密码认证，启用下面这两项就ok
+          username: 2335921006@qq.com
+          password: luoyi@231
+eureka:
+  instance:
+      hostname: localhost
+  client:
+    service-url:
+      #向服务中心注册服务,xslde:123456是用户名称和密码
+      defaultZone: http://spring:eureka@${eureka.instance.hostname}:7100/eureka/
