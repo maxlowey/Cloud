@@ -3,3 +3,4 @@ server:
 spring:
   application:
     #配置应用名称，后期可根据应用名称调用应用的应服务
+  name: openfeign
