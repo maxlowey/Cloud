@@ -1,7 +1,7 @@
 xslde:
   name: 123455abcd
 server:
- port: 7101 #启动端口号
+ port: 7103 #启动端口号
 spring:
   application:
     #配置应用名称，后期可根据应用名称调用应用的服务
