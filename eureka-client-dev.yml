@@ -5,6 +5,6 @@ server:
 spring:
   application:
     #配置应用名称，后期可根据应用名称调用应用的服务
-    name: eureka-client
+    name: eureka-client-config
     
 
